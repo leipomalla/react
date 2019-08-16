@@ -1,0 +1,14 @@
+
+#container {
+    display: flex;
+    
+}
+.nimi {
+    display: flex;
+    background-color: blue;
+    color: white;
+    margin: 10px;
+    padding: 20px;
+    font-size: 30px;
+
+}
