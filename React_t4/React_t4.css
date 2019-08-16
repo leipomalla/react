@@ -1,0 +1,12 @@
+hr  {
+    position: absolute;
+    width: 150px; 
+    left: 100px;
+    top: 300px;
+    visibility: hidden;
+}
+
+body {
+    background-color: blue;
+    height: 5000px;
+}
