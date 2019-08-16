@@ -1,0 +1,13 @@
+#ympyra {
+    height: 100px;
+    width: 100px;
+    background-color: red;
+    border-radius: 50%;
+   position: absolute;
+   transition: 120s;
+   left :0px;
+}
+
+body {
+    background-color: lavender;
+}
