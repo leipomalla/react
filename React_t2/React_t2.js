@@ -6,14 +6,18 @@
 var imageArray = ["runner1.png", "runner2.png","runner3.png", "runner4.png"];
 console.log(imageArray.length);
 
-setInterval(vaihdaKuvaa, 2000);
+setInterval(vaihdaKuvaa, 60);
+
+var i = 0;
 
 function vaihdaKuvaa() {
-    for (i = 1; i < imageArray.length; i++) {
-       document.getElementById("kuva").src = imageArray[i];
+    document.getElementById("kuva").src = imageArray[i];
+    if (i == imageArray.length-1) {
+    	i = 0;
+    } else {
+    	i++;
     }
 }
-
 
 
 
