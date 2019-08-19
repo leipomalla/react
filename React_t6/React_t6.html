@@ -1,0 +1,53 @@
+<!--The height of the first div #div1 always has to be equal to the width of the second div #div2. At window resize, 
+    you should display in the console:
+
+* the width of the second div #div2
+
+* the height of the first div #div1-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Equal width and height</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+    <!--<link rel='stylesheet' type='text/css' media='screen' href='lomalaskin.css'>-->
+    <!--<script src='main.js'></script>-->
+    <style>
+        #div1 {
+            background-color: palevioletred;
+            height: 150px;
+
+        }
+
+        #div2 {
+            background-color: blueviolet;
+           
+            height: 100px;
+        }
+    </style>
+</head>
+
+<body onload="resize"()>
+
+
+    <div id="div2">
+
+    </div>
+    <div id="div1">
+
+    </div>
+    <script>
+        var korkeus = document.getElementById("div1").style.height;
+        var leveys = document.getElementById("div2").style.width;
+
+        function resize(){
+            korkeus = leveys;
+        }
+
+
+    </script>
+</body>
+
+</html>

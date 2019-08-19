@@ -3,7 +3,7 @@
 
 <head>
     <meta charset='utf-8'>
-    <title>Mikä näppäin?</title>
+    <title>PopUp2</title>
     <meta name='viewport' content='width=device-width, initial-scale=1'>
     <!--<link rel='stylesheet' type='text/css' media='screen' href='lomalaskin.css'>-->
     <!--<script src='main.js'></script>-->
@@ -11,21 +11,15 @@
     </style>
 </head>
 
-<body>
-
-    <p id="txt">x</p>
-
+<body onload="lataaPopup()">
     <script>
-
-        document.onkeypress = function (e) {
-            e = e || window.event;
-            console.log(e.keyCode);
-            if (e.keyCode == 13) {
-                alert("bravo");
-            } else {
-                alert("try again");
+        function lataaPopup() {
+            if (confirm("Do you know some JavaScript already?")) {
+                console.log(":)");
             }
+
         }
 
     </script>
 </body>
+</html>
