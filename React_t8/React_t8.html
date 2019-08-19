@@ -1,7 +1,7 @@
 <!--You have to create a function which replaces all “e” in a string by “o”. This function is executed when 
     clicking the “Transform” button and take the typed string (text input) as an argument. The modified string has 
     then to be displayed in the console of the browser.-->
-    <!DOCTYPE html>
+<!DOCTYPE html>
 <html>
 
 <head>
@@ -13,13 +13,29 @@
     <style>
     </style>
 </head>
+
 <body>
-    <p>You have to create a function which replaces all “e” in a string by “o”. This function is executed when 
-            clicking the “Transform” button and take the typed string (text input) as an argument. The modified string has 
-            then to be displayed in the console of the browser.
-        </p>
-        <input type="text" id="teksti" size="40">
+    <p>You have to create a function which replaces all “e” in a string by “o”. This function is executed when
+        clicking the “Transform” button and take the typed string (text input) as an argument. The modified string has
+        then to be displayed in the console of the browser.
+    </p>
+    <input type="text" id="teksti" size="40">
+    <button type="button" onclick="transform()">Transform</button>
+
+    <script>
+
+        function transform() {
+            let muutettavaTeksti = document.getElementById("teksti").value;
+
+            console.log("button ainakin toimii");
+            console.log(muutettavaTeksti);
+            var muutettuTeksti = muutettavaTeksti.replace(/e/g, "o");
+            console.log(muutettuTeksti);
+
+        }
+    </script>
 
 
 </body>
+
 </html>
