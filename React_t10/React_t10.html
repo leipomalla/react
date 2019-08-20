@@ -1,0 +1,64 @@
+<!--You have array with transport lines ["line n°1", "bus n°24", "tramway n°3", "line n°2", "bus n°20", "tramway n°312", 
+    "line n°130", "bus n°28", "tramway n°20", "line n°101"].
+
+You should order the lines increasingly by their number and display the result in the console of the browser.
+
+Example : ["line n°1", "line n°101", "line n°130", "line n°2"]
+
+Extra : get lines array sorted as : ["line n°1", "line n°2", "line n°101", "line n°130"]-->
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Liikennevälineet</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+</head>
+<body>
+
+    <script>
+        var lines = ["line n°1", "bus n°24", "tramway n°3", "line n°2", "bus n°20", "tramway n°312",
+                "line n°130", "bus n°28", "tramway n°20", "line n°101"];
+        var linesNoOther = [];
+
+         console.log(lines);
+         console.log(linesNoOther);
+
+        
+        poistaMuutKuinLinet();
+        
+            function poistaMuutKuinLinet(){
+                
+                for(var i = 0; i < lines.length; i++){
+                    if(lines[i].startsWith("l"))  {
+                        linesNoOther.push(lines[i]);
+                    }
+                }
+            }
+       console.log(linesNoOther);
+                linesNoOther.sort();
+                console.log(linesNoOther);
+
+     
+      
+
+             //var linesNoOther = lines.filter(lines => !poistettavat.includes(lines));
+
+            //arr = arr.filter(item => !forDeletion.includes(item))
+            // !!! Read below about array.includes(...) support !!!
+
+            /*console.log(linesNoOther);
+[ 1, 4 ]
+
+        var linesNoOther = lines.sort();
+        console.log(linesNoOther);
+
+        
+        lines = lines.sort((a, b) => a - b);
+        console.log(lines);*/
+        </script>
+
+
+
+</body>
+</html>
