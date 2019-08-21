@@ -3,12 +3,8 @@
 
 let myID = document.getElementById("scrollattava");
 
-function scrollaa() {
-  var y = window.scrollY;
-  if (y >= 500) {
-    window.alert("#popup");
-  } else {
-    myID.className = "bottomMenu hide"
-  }
-};
+myID.scrollTop = 200;
+
+
+
 

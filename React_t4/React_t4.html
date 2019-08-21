@@ -9,10 +9,22 @@
 
 </head>
 <body>
-    <hr id="scrollattava"></hr>
+    <div id="scrollattava"></div>
 
-    <script src="React_t4.js">
-    </script>
+    <script>
+    let myID = document.getElementById("scrollattava");
+
+    myID.scrollTop = 200;
+
+    function tuoEsiin(element){
+        if(element.scrollTop > 200){
+            document.getElementById(element).style.visibility = visible;
+        } else {
+            document.getElementById(element).style.visibility = hidden;
+        }
+    }
+</script>
+   
 
 </body>
 </html>

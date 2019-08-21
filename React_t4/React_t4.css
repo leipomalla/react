@@ -1,8 +1,8 @@
-hr  {
-    position: absolute;
+#scrollattava {
+    
     width: 150px; 
     left: 100px;
-    top: 300px;
+    
     visibility: hidden;
 }
 
