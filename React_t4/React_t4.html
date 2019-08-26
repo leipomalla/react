@@ -9,20 +9,23 @@
 
 </head>
 <body>
-    <div id="scrollattava"></div>
+    <div id="scrollattava" >
+        <img src="puppies.jpg" alt="pentuja">
+    </div>
 
     <script>
-    let myID = document.getElementById("scrollattava");
+   
 
-    myID.scrollTop = 200;
+    window.onscroll = function () { tuoEsiin() };
 
-    function tuoEsiin(element){
-        if(element.scrollTop > 200){
-            document.getElementById(element).style.visibility = visible;
-        } else {
-            document.getElementById(element).style.visibility = hidden;
+        function tuoEsiin() {
+            if (document.body.scrollTop > 200 || document.documentElement.scrollTop > 200) {
+                document.getElementById("scrollattava").style.visibility = "visible";
+            } else {
+                document.getElementById("scrollattava").style.visibility = "hidden";
+            }
         }
-    }
+      
 </script>
    
 
