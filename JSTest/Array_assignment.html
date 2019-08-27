@@ -51,20 +51,53 @@ b. Program swaps third and seventh number other way around.
            console.log(kakkostenMaara); */
 
             //g. Program prints out all the numbers that are in the array before 0.
-            for(var i = 0; i < numbers.length; i++){
-                if(numbers[i] < 0){
-                    console.log(numbers[i]);
+            console.log(numbers);
+               function ennenNollaa(element) {
+                    return element == 0;
                 }
-            }
+
+                var nollanIndeksi = numbers.findIndex(ennenNollaa);
+                for(i=0; i<nollanIndeksi;i++){
+                    console.log("Arrayssa numbers on ennen numeroa nolla numerot " + numbers[i]);
+                }
+                
+
 
             //h. Program counts how many numbers there are after 0 and prints out the result.
-            var nollanJalkeen;
-            for (var i = 0; i < numbers.length; i++) {
-                if(numbers[i] > 0){
-                    nollanJalkeen++;
+          
+            var numeroitaNollanJalkeen = numbers.length - 1 - nollanIndeksi;
+                console.log("Arrayssa on numeron 0 jälkeen " + numeroitaNollanJalkeen + " numeroa");
+
+                /*2. Make a program that draws 7 digits for Lotto numbers. You have to make sure that same number 
+                isn’t there many times. You can use array that has 40 pieces of zeros. When you get a random number 
+                that is the index of the array and you make the value inside zero to one, but if it already was 
+                one you draw a new random number. At the end you print out the indexes that has one as a value 
+                inside. */
+                var nollat = Array(40).fill(0);
+                
+                console.log(nollat);
+                while(i < 8){
+                    var muutettavaIndeksi = Math.floor(Math.random() * 40); 
+                    if (nollat[muutettavaIndeksi] != 1){
+                        nollat[muutettavaIndeksi] = 1;
+                          i++;
+                    } else {
+                        continue;
+                    }
+                  
                 }
-            }
-            console.log(nollanJalkeen);
+                console.log(nollat);
+                var ykkoset = Array();
+                for(i = 0; i < nollat.length; i++){
+                    if (nollat[i] == 1){
+                        ykkoset.push(i);
+                    }
+
+                }
+                console.log(ykkoset);
+                
+
+                
 
 
 
