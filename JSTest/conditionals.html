@@ -2,7 +2,7 @@
     is less than 27 the text “Right age for military service” is printed. If the age is less than 41 the text “You are 
     in reserve” is printed. If the age is less than 55 the text “You are in backup reserve” is printed. All other 
     cases “too aged” is printed.-->
-    
+
 <!DOCTYPE html>
 <html>
 
@@ -15,47 +15,54 @@
 
 <body>
     <script>
-    /*var ika = window.prompt("Anna ikä " );
-    if(ika < 18){
-        console.log("Too young!");
-    } else if (ika > 18 && ika < 27){
-        console.log("Right age for military service");
-    } else if(ika > 27 && ika < 41){
-        console.log("You are in reserve");
-    } else if (ika > 41 && ika < 55){
-        console.log("You are in backup reserve");
-    } else {
-        console.log("Too aged!");
-    }*/
-    /*Make a program that asks three numbers 
-    from the user. Program prints out sum of the numbers, if any of 
-    the numbers is positive. If all the numbers are positive, also 
-    print out multiplication. If all numbers are negative, text 
-    “only negatives” is printed. Handle zero as positive in this assignment. */
+        /*var ika = window.prompt("Anna ikä " );
+        if(ika < 18){
+            console.log("Too young!");
+        } else if (ika > 18 && ika < 27){
+            console.log("Right age for military service");
+        } else if(ika > 27 && ika < 41){
+            console.log("You are in reserve");
+        } else if (ika > 41 && ika < 55){
+            console.log("You are in backup reserve");
+        } else {
+            console.log("Too aged!");
+        }*/
+        /*Make a program that asks three numbers 
+        from the user. Program prints out sum of the numbers, if any of 
+        the numbers is positive. If all the numbers are positive, also 
+        print out multiplication. If all numbers are negative, text 
+        “only negatives” is printed. Handle zero as positive in this assignment. */
 
-    /*var kolmeLukua = Array();
-    kolmeLukua = window.prompt("Anna kolme lukua");
-    for(i=0; i< kolmeLukua.length; i++){
-        if(i > 0){
-            break;
+        var kolmeLukua = Array();
+        var i = 0;
+        while (i < 3) {
+            var syote = window.prompt("Anna luku");
+            kolmeLukua.push(parseInt(syote));
+            i++;
         }
-        console.log("Böö");
-    }*/
-    /* Make a program that asks one number from the user. 
-    Then the program finds out if the number is positive and is the number divisible by 2.*/
-    var numero = window.prompt("Anna luku");
-    if (numero > 0 && numero % 2 == 0){
-        console.log("No mutta jee!");
-    } else {
-        console.log("Ei tällä kertaa");
-    }
+        console.log(kolmeLukua);
+
+        const reducer = (accumulator, currentValue) => accumulator + currentValue;
+        console.log(kolmeLukua.reduce(reducer));
 
         
-       
 
-    
+
+        /* Make a program that asks one number from the user. 
+        Then the program finds out if the number is positive and is the number divisible by 2.*/
+        var numero = window.prompt("Anna luku");
+        if (numero > 0 && numero % 2 == 0) {
+            console.log("No mutta jee!");
+        } else {
+            console.log("Ei tällä kertaa");
+        }
+
+
+
+
+
     </script>
-    </body>
-    
+</body>
 
-    </html>
+
+</html>

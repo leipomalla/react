@@ -76,12 +76,15 @@ b. Program swaps third and seventh number other way around.
                 var nollat = Array(40).fill(0);
                 
                 console.log(nollat);
-                while(i < 8){
+                var i = 0;
+                while(i < 7){
+                    console.log(i);
                     var muutettavaIndeksi = Math.floor(Math.random() * 40); 
                     if (nollat[muutettavaIndeksi] != 1){
                         nollat[muutettavaIndeksi] = 1;
                           i++;
                     } else {
+                        console.log(i);
                         continue;
                     }
                   
