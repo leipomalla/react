@@ -26,6 +26,84 @@ b. Program swaps third and seventh number other way around.
         [numbers[2], numbers[6]] = [numbers[6], numbers[2]];
         console.log(numbers);
 
+        //c. Program calculates the sum of the numbers and prints out the result.
+       const sum = [4, -5, -2, 7, 15, -9, 0, 6, 7, 2].reduce((partial_sum, a) => partial_sum + a, 0);  
+       console.log("The sum is " + sum);
+
+       //d. Program calculates the average of the numbers and prints out the result
+       let sum2 = numbers.reduce((previous, current) => current += previous);
+       console.log(sum2);
+        let avg = sum2 / numbers.length;
+        console.log(avg);
+
+        //e. Program finds out the smallest number and prints it.
+        console.log(Math.min(...numbers));
+
+        //f. Program asks one number from the user and 
+        //then counts how many times that number is in the array. Program prints out the result.
+        /*var luku = window.prompt("Anna luku: ");
+        var kakkostenMaara = 0;
+            for (var i = 0; i < numbers.length; ++i) {
+                if (numbers[i] == luku){
+                    kakkostenMaara++;
+            }
+            }
+           console.log(kakkostenMaara); */
+
+            //g. Program prints out all the numbers that are in the array before 0.
+            console.log(numbers);
+               function ennenNollaa(element) {
+                    return element == 0;
+                }
+
+                var nollanIndeksi = numbers.findIndex(ennenNollaa);
+                for(i=0; i<nollanIndeksi;i++){
+                    console.log("Arrayssa numbers on ennen numeroa nolla numerot " + numbers[i]);
+                }
+                
+
+
+            //h. Program counts how many numbers there are after 0 and prints out the result.
+          
+            var numeroitaNollanJalkeen = numbers.length - 1 - nollanIndeksi;
+                console.log("Arrayssa on numeron 0 jälkeen " + numeroitaNollanJalkeen + " numeroa");
+
+                /*2. Make a program that draws 7 digits for Lotto numbers. You have to make sure that same number 
+                isn’t there many times. You can use array that has 40 pieces of zeros. When you get a random number 
+                that is the index of the array and you make the value inside zero to one, but if it already was 
+                one you draw a new random number. At the end you print out the indexes that has one as a value 
+                inside. */
+                var nollat = Array(40).fill(0);
+                
+                console.log(nollat);
+                var i = 0;
+                while(i < 7){
+                    console.log(i);
+                    var muutettavaIndeksi = Math.floor(Math.random() * 40); 
+                    if (nollat[muutettavaIndeksi] != 1){
+                        nollat[muutettavaIndeksi] = 1;
+                          i++;
+                    } else {
+                        console.log(i);
+                        continue;
+                    }
+                  
+                }
+                console.log(nollat);
+                var ykkoset = Array();
+                for(i = 0; i < nollat.length; i++){
+                    if (nollat[i] == 1){
+                        ykkoset.push(i);
+                    }
+
+                }
+                console.log(ykkoset);
+                
+
+                
+
+
+
         
     </script>
 

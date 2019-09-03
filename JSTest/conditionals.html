@@ -26,6 +26,7 @@
             console.log("You are in backup reserve");
         } else {
             console.log("Too aged!");
+
         }
         Make a program that asks three numbers 
         from the user. Program prints out sum of the numbers, if any of 
@@ -58,11 +59,37 @@
 
         //Make a program that asks one number from the user. 
         //Then the program finds out if the number is positive and is the number divisible by 2.
+
+        }*/
+        /*Make a program that asks three numbers 
+        from the user. Program prints out sum of the numbers, if any of 
+        the numbers is positive. If all the numbers are positive, also 
+        print out multiplication. If all numbers are negative, text 
+        “only negatives” is printed. Handle zero as positive in this assignment. */
+
+        var kolmeLukua = Array();
+        var i = 0;
+        while (i < 3) {
+            var syote = window.prompt("Anna luku");
+            kolmeLukua.push(parseInt(syote));
+            i++;
+        }
+        console.log(kolmeLukua);
+
+        const reducer = (accumulator, currentValue) => accumulator + currentValue;
+        console.log(kolmeLukua.reduce(reducer));
+
+        
+
+
+        /* Make a program that asks one number from the user. 
+        Then the program finds out if the number is positive and is the number divisible by 2.*/
         var numero = window.prompt("Anna luku");
         if (numero > 0 && numero % 2 == 0) {
             console.log("No mutta jee!");
         } else {
             console.log("Ei tällä kertaa");
+
         } */
 
         //Make a program that asks one number from the user.Then the program finds out if the number is positive 
@@ -97,6 +124,13 @@
          } else {
              console.log(tienestit + (tunnit - 9) * 2 * palkka);
          }
+
+        }
+
+
+
+
+
 
     </script>
 </body>
