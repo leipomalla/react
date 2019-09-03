@@ -81,27 +81,22 @@
 
          let palkka = window.prompt("Anna palkka");
         palkka = parseInt(palkka);
-         console.log(palkka);
+         //console.log(palkka);
 
          let tunnit = window.prompt("Anna työtunnit");
          tunnit = parseInt(tunnit);
-         console.log(tunnit);
+         //console.log(tunnit);
 
          var tienestit = palkka * tunnit;
-         console.log(tienestit);
+         //console.log(tienestit);
 
-        /*- if(tunnit <=7){
-            tienestit = parseInt(tunnit) * parseInt(palkka);
+        if(tunnit <=7){
+           console.log(tienestit);
          } else if (tunnit >=7 && tunnit <= 9){
-             tienestit = 7 + ((tunnit - 7) * 1.5) * palkka;
+             console.log(tienestit + (tunnit - 7) * 1.5 * palkka);
          } else {
-             tienestit = 
-         }*/
-
-
-
-
-
+             console.log(tienestit + (tunnit - 9) * 2 * palkka);
+         }
 
     </script>
 </body>
