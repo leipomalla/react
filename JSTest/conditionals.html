@@ -1,0 +1,110 @@
+<!--1. Make a program that asks age of the user. If the age is less than 18 the text “too young” is printed. If the age 
+    is less than 27 the text “Right age for military service” is printed. If the age is less than 41 the text “You are 
+    in reserve” is printed. If the age is less than 55 the text “You are in backup reserve” is printed. All other 
+    cases “too aged” is printed.-->
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset='utf-8'>
+    <title>Array</title>
+    <meta name='viewport' content='width=device-width, initial-scale=1'>
+
+</head>
+
+<body>
+    <script>
+        /*var ika = window.prompt("Anna ikä " );
+        if(ika < 18){
+            console.log("Too young!");
+        } else if (ika > 18 && ika < 27){
+            console.log("Right age for military service");
+        } else if(ika > 27 && ika < 41){
+            console.log("You are in reserve");
+        } else if (ika > 41 && ika < 55){
+            console.log("You are in backup reserve");
+        } else {
+            console.log("Too aged!");
+        }
+        Make a program that asks three numbers 
+        from the user. Program prints out sum of the numbers, if any of 
+        the numbers is positive. If all the numbers are positive, also 
+        print out multiplication. If all numbers are negative, text 
+        “only negatives” is printed. Handle zero as positive in this assignment. 
+
+        
+        var onkoPositiivisia = Array();
+        var onkoNegatiivisia = Array();
+        var kolmeLukua = Array();
+      
+        var i = 0;
+        while (i < 3) {
+            var syote = window.prompt("Anna kolme lukua");
+            if(syote > 0){
+                onkoPositiivisia.push(syote);
+                const reducer = (accumulator, currentValue) => accumulator + currentValue;
+                console.log(onkoPositiivisia.reduce(reducer));
+                i++;
+            } else {
+                onkoNegatiivisia.push(syote);
+                const reducer = (accumulator, currentValue) => accumulator * currentValue;
+                console.log(onko.reduce(reducer));
+
+            
+                i++;
+            }
+        }
+
+        //Make a program that asks one number from the user. 
+        //Then the program finds out if the number is positive and is the number divisible by 2.
+        var numero = window.prompt("Anna luku");
+        if (numero > 0 && numero % 2 == 0) {
+            console.log("No mutta jee!");
+        } else {
+            console.log("Ei tällä kertaa");
+        } */
+
+        //Make a program that asks one number from the user.Then the program finds out if the number is positive 
+        //and is the number divisible by 2.
+        /*var lukuSyote = window.prompt("Anna luku");
+        if(lukuSyote > 0 && lukuSyote % 2 == 0){
+            console.log("Positiivinen ja parillinen!");
+
+        }*/
+
+        //Make a program that asks hourly salary and how many hours user worked on one day. With this information
+         //program calculates day’s salary. The salary is calculated as follows: 
+         //- first 7 hours by hourly salary 
+         //- next 2 hours 50% extra 
+         //- rest of the hours 100% extra
+
+         let palkka = window.prompt("Anna palkka");
+        palkka = parseInt(palkka);
+         console.log(palkka);
+
+         let tunnit = window.prompt("Anna työtunnit");
+         tunnit = parseInt(tunnit);
+         console.log(tunnit);
+
+         var tienestit = palkka * tunnit;
+         console.log(tienestit);
+
+        /*- if(tunnit <=7){
+            tienestit = parseInt(tunnit) * parseInt(palkka);
+         } else if (tunnit >=7 && tunnit <= 9){
+             tienestit = 7 + ((tunnit - 7) * 1.5) * palkka;
+         } else {
+             tienestit = 
+         }*/
+
+
+
+
+
+
+    </script>
+</body>
+
+
+</html>
