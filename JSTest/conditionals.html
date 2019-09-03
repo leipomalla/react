@@ -26,6 +26,40 @@
             console.log("You are in backup reserve");
         } else {
             console.log("Too aged!");
+
+        }
+        Make a program that asks three numbers 
+        from the user. Program prints out sum of the numbers, if any of 
+        the numbers is positive. If all the numbers are positive, also 
+        print out multiplication. If all numbers are negative, text 
+        “only negatives” is printed. Handle zero as positive in this assignment. 
+
+        
+        var onkoPositiivisia = Array();
+        var onkoNegatiivisia = Array();
+        var kolmeLukua = Array();
+      
+        var i = 0;
+        while (i < 3) {
+            var syote = window.prompt("Anna kolme lukua");
+            if(syote > 0){
+                onkoPositiivisia.push(syote);
+                const reducer = (accumulator, currentValue) => accumulator + currentValue;
+                console.log(onkoPositiivisia.reduce(reducer));
+                i++;
+            } else {
+                onkoNegatiivisia.push(syote);
+                const reducer = (accumulator, currentValue) => accumulator * currentValue;
+                console.log(onko.reduce(reducer));
+
+            
+                i++;
+            }
+        }
+
+        //Make a program that asks one number from the user. 
+        //Then the program finds out if the number is positive and is the number divisible by 2.
+
         }*/
         /*Make a program that asks three numbers 
         from the user. Program prints out sum of the numbers, if any of 
@@ -55,7 +89,44 @@
             console.log("No mutta jee!");
         } else {
             console.log("Ei tällä kertaa");
+
+        } */
+
+        //Make a program that asks one number from the user.Then the program finds out if the number is positive 
+        //and is the number divisible by 2.
+        /*var lukuSyote = window.prompt("Anna luku");
+        if(lukuSyote > 0 && lukuSyote % 2 == 0){
+            console.log("Positiivinen ja parillinen!");
+
+        }*/
+
+        //Make a program that asks hourly salary and how many hours user worked on one day. With this information
+         //program calculates day’s salary. The salary is calculated as follows: 
+         //- first 7 hours by hourly salary 
+         //- next 2 hours 50% extra 
+         //- rest of the hours 100% extra
+
+         let palkka = window.prompt("Anna palkka");
+        palkka = parseInt(palkka);
+         //console.log(palkka);
+
+         let tunnit = window.prompt("Anna työtunnit");
+         tunnit = parseInt(tunnit);
+         //console.log(tunnit);
+
+         var tienestit = palkka * tunnit;
+         //console.log(tienestit);
+
+        if(tunnit <=7){
+           console.log(tienestit);
+         } else if (tunnit >=7 && tunnit <= 9){
+             console.log(tienestit + (tunnit - 7) * 1.5 * palkka);
+         } else {
+             console.log(tienestit + (tunnit - 9) * 2 * palkka);
+         }
+
         }
+
 
 
 
